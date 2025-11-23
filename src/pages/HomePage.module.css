@@ -1,0 +1,33 @@
+.infoGrid {
+  display: grid;
+  gap: 11px;
+  grid-template-areas:
+    'market weather'
+    'news news'
+    'rewards rewards';
+  grid-template-columns: 1fr 2fr;
+}
+
+.marketPrice {
+  grid-area: market;
+}
+.weather {
+  grid-area: weather;
+}
+.currentNews {
+  grid-area: news;
+}
+.rewardPoints {
+  grid-area: rewards;
+}
+
+@media (max-width: 100px) {
+  .infoGrid {
+    grid-template-areas:
+      'market'
+      'weather'
+      'news'
+      'rewards';
+    grid-template-columns: 1fr;
+  }
+}

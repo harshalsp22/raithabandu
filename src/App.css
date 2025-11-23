@@ -1,0 +1,6 @@
+.main-content {
+  padding: 80px 24px 24px; /* Increased side padding for better spacing on mobile */
+  max-width: 1200px;      /* Prevents the content from stretching too wide */
+  margin-left: auto;      /* These two lines center the content block */
+  margin-right: auto;
+}

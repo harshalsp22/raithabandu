@@ -1,0 +1,23 @@
+{
+  "appTitle": "Raitha Bandu",
+  "login": "Login",
+  "logout": "Logout",
+  "marketPrice": "Market Price",
+  "weather": "Weather",
+  "currentNews": "Current News",
+  "rewardPoints": "Reward Points",
+  "education": "Education",
+  "government": "Government Schemes",
+  "ml": "AI/ML Suggestions",
+  "transport": "Transport",
+  "settings": "Settings",
+  "profileEdit": "Edit Profile",
+  "darkMode": "Dark Mode",
+  "lightMode": "Light Mode",
+  "ad": {
+    "title": "Nourish Your Soil, Maximize Your Yield",
+    "description": "Our premium-grade fertilizers provide the essential nutrients your crops need to thrive. See the difference this season.",
+    "button": "Explore Products"
+  }
+
+}

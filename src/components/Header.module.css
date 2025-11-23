@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 64px;
+  background-color: var(--header-background);
+  color: var(--header-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.headerSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.headerSection.center {
+  justify-content: center;
+}
+
+.headerSection.right {
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoIcon {
+  font-size: 2rem;
+  color: var(--header-text);
+}
+
+.logoLink h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.languageSelector {
+  position: relative;
+}
+
+.langButton {
+  background: none;
+  border: 1px solid var(--header-text);
+  color: var(--header-text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.caret {
+  transition: transform 0.2s ease;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: var(--card-background);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  overflow: hidden;
+  z-index: 1100;
+  width: 120px;
+}
+
+.dropdownMenu a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdownMenu a:hover {
+  background-color: var(--background-color);
+}
+
+.authButton,
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--header-text);
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.authButton:hover,
+.menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.userIcon {
+  font-size: 1.6rem;
+}
+
+.menuButton {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .authButton span {
+    display: none;
+  }
+  .langButton span,
+  .langButton .caret {
+    display: none;
+  }
+}
+.logoIcon {
+  height: 45px; /* <-- CHANGE THIS VALUE */
+  width: auto;
+}

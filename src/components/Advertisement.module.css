@@ -1,0 +1,77 @@
+.adContainer {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: #ffffff;
+  overflow: hidden; /* Add this to contain the video */
+}
+
+.adTextContent {
+  flex: 1;
+}
+
+.adTextContent h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.adTextContent p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.adButton {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.adButton:hover {
+  background-color: #27ae60;
+}
+
+/* Updated class name for the media container */
+.adMediaContainer {
+  flex-basis: 250px; /* Increased size a bit */
+  height: 150px; /* Fixed height */
+  border-radius: 8px;
+  overflow: hidden; /* Ensures video corners are rounded */
+}
+
+/* New class for the video element */
+.adVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills the container without stretching */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .adContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .adMediaContainer {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+  }
+}
+
